@@ -8,7 +8,7 @@
 
 ---
 ## Descripción
-Este proyecto implementa el algoritmo CYK (Cocke-Younger-Kasami) para verificar si una cadena pertenece a un lenguaje definido por una gramática en Forma Normal de Chomsky (CNF). La complejidad del algoritmo CYK es O(n³), donde𝑛n es la longitud de la cadena a evaluar.
+Este proyecto implementa el algoritmo CYK (Cocke-Younger-Kasami), el programa genera una gráfica que compara el tiempo real de ejecución del algoritmo CYK con su complejidad teórica 𝑂(𝑛^3), mostrando cómo escala el rendimiento del algoritmo a medida que la longitud de la cadena aumenta.
 ## Instrucciones de uso
 
 ### 1. Descargar el Archivo CYK
@@ -23,4 +23,8 @@ Para poder ejecutar el codigo codigo_cyk.py Utiliza el siguiente comando en la t
 ```bash
 python3 codigo_cyk.py
 ```
-Despues de esto te pedira que ingreses una cadena a verificar y mostrara una tabla de los pasos a pasos donde se verifica en la gramatica la cadena introducida 
+El código crea una tabla para ver cómo se puede derivar la cadena usando las reglas de la gramática. Luego, mide el tiempo que realmente tarda el algoritmo en procesar cadenas de distintos tamaños y lo compara con el tiempo esperado teóricamente, que sigue la complejidad 𝑂(𝑛^3). Esto significa que, si la cadena crece en longitud, el tiempo de ejecución debería aumentar aproximadamente con el cubo de esa longitud. Al final, se genera un gráfico para mostrar cómo cambia el tiempo de ejecución a medida que las cadenas se vuelven más largas.
+
+![image](https://github.com/user-attachments/assets/41d54c14-2335-40e7-a581-107f7332f2e5)
+
+
